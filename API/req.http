@@ -1,0 +1,24 @@
+GET http://localhost:4000/users/get-users
+###
+GET http://localhost:4000/users/get-user/1
+###
+POST http://localhost:4000/users/create-user
+Content-Type: application/json
+
+{
+    "id":"1",
+    "username":"john30",
+    "password":"john30",
+    "address":"Hyderabad"
+}
+
+###
+DELETE http://localhost:4000/users/delete-user/1
+
+###
+PUT http://localhost:4000/users/update-user/1
+Content-Type: application/json
+
+{
+    "address":"Mumbai"
+}
